@@ -1,0 +1,52 @@
+{
+  "name": "gatsby-themes",
+  "version": "0.0.1",
+  "description": "Gatsby theme packages",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/TidyIQ/gatsby-themes.git"
+  },
+  "author": "Jake Clayton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TidyIQ/gatsby-themes/issues"
+  },
+  "homepage": "https://github.com/TidyIQ/gatsby-themes#readme",
+  "workspaces": [
+    "sites/*",
+    "packages/*"
+  ],
+  "eslintConfig": {
+    "extends": "@tidyiq"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "npm run lint:fix",
+      "git add"
+    ],
+    "{*.{json,md}}": [
+      "prettier --ignore-path .gitignore --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": [
+        "npm run type-check && lint-staged"
+      ]
+    }
+  },
+  "scripts": {
+    "format": "prettier --ignore-path .gitignore --write **/*.{js,jsx,ts,tsx}",
+    "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
+    "lint:fix": "npm run lint --fix",
+    "type-check": "tsc --noEmit",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@tidyiq/eslint-config": "^2.0.2",
+    "eslint": "^6.0.1",
+    "prettier": "^1.18.2"
+  }
+}

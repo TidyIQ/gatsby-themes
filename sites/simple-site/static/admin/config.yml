@@ -1,0 +1,35 @@
+backend:
+  name: test-repo
+media_folder: static/img
+public_folder: img
+collections:
+  - label: "Menu"
+    name: "navbar"
+    folder: "navbar"
+    create: true
+    fields:
+      - label: "Links"
+        name: "links"
+        widget: "list"
+        fields:
+          - label: "Label"
+            name: "label"
+            widget: "string"
+            hint: "What users will see"
+          - label: "Path"
+            name: "path"
+            widget: "string"
+            hint: "File name in /pages/ without extension"
+      - label: "Actions"
+        name: "actions"
+        widget: "list"
+        fields:
+          - label: "Label"
+            name: "label"
+            widget: "string"
+            hint: "What users will see"
+          - label: "Type"
+            name: "type"
+            widget: "select"
+            options: ["Login", "CTA", "Contact"]
+            hint: "Type of action"
