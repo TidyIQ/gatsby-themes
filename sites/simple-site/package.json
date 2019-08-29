@@ -31,6 +31,7 @@
     "@material-ui/core": "^4.2.0",
     "@material-ui/icons": "^4.2.1",
     "@material-ui/styles": "^4.2.0",
+    "@tidyiq/components": "*",
     "@tidyiq/gatsby-theme-tidyiq": "*",
     "formik": "^1.5.8",
     "gatsby": "^2.13.11",
@@ -42,7 +43,7 @@
     "yup": "^0.27.0"
   },
   "devDependencies": {
-    "@tidyiq/eslint-config": "^2.0.2",
+    "@tidyiq/eslint-config": "^2.0.5",
     "eslint": "^6.0.1",
     "prettier": "^1.18.2",
     "typescript": "^3.5.3"

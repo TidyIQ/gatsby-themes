@@ -3,7 +3,7 @@
  */
 
 import React, { FC } from "react";
-import Helmet from "react-helmet";
+import TIQHead from "@tidyiq/components/dist/Head";
 import { useStaticQuery, graphql } from "gatsby";
 
 interface SEOProps {
@@ -11,7 +11,7 @@ interface SEOProps {
   readonly title: string;
 }
 
-const SEO: FC<SEOProps> = ({ description, title }) => {
+const SEO: FC<SEOProps> = ({ children, description, title }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -25,19 +25,13 @@ const SEO: FC<SEOProps> = ({ description, title }) => {
   );
 
   return (
-    <Helmet
-      htmlAttributes={{
-        lang: "en-AU"
-      }}
-      meta={[
-        {
-          name: "description",
-          content: description
-        }
-      ]}
+    <TIQHead
+      description={description}
+      siteName={site.siteMetadata.title}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
-    />
+    >
+      {children}
+    </TIQHead>
   );
 };
 

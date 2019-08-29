@@ -1,4 +1,4 @@
-/* eslint-disable import/prefer-default-export, react/jsx-filename-extension, import/no-unresolved */
+/* eslint-disable import/prefer-default-export, react/jsx-filename-extension */
 
 /**
  * Implement Gatsby's Browser APIs in this file.
@@ -7,8 +7,8 @@
  */
 
 import React from "react";
-import ContextProvider from "./src/_config/context";
+import AppProvider from "./src/AppProvider";
 
 export const wrapRootElement = ({ element }) => (
-  <ContextProvider>{element}</ContextProvider>
+  <AppProvider>{element}</AppProvider>
 );

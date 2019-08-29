@@ -3,33 +3,23 @@ backend:
 media_folder: static/img
 public_folder: img
 collections:
-  - label: "Menu"
-    name: "navbar"
-    folder: "navbar"
-    create: true
-    fields:
-      - label: "Links"
-        name: "links"
-        widget: "list"
+  - label: "Logos"
+    name: "logos"
+    files:
+      - label: "Text Logos"
+        name: "textLogos"
+        file: "src/cms/logos/text.md"
         fields:
-          - label: "Label"
-            name: "label"
-            widget: "string"
-            hint: "What users will see"
-          - label: "Path"
-            name: "path"
-            widget: "string"
-            hint: "File name in /pages/ without extension"
-      - label: "Actions"
-        name: "actions"
-        widget: "list"
-        fields:
-          - label: "Label"
-            name: "label"
-            widget: "string"
-            hint: "What users will see"
-          - label: "Type"
-            name: "type"
-            widget: "select"
-            options: ["Login", "CTA", "Contact"]
-            hint: "Type of action"
+          - label: "Title"
+            name: "title"
+          - label: "Name"
+            name: "name"
+            widget: "object"
+            fields:
+              - label: "First text segment"
+                name: "start"
+              - label: "Second text segment (optional)"
+                name: "end"
+                required: "false"
+          - label: "Font Family"
+            name: "fontFamily"

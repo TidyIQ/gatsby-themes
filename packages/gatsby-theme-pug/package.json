@@ -1,7 +1,7 @@
 {
-  "name": "@tidyiq/gatsby-theme-tidyiq",
+  "name": "@tidyiq/gatsby-theme-pug",
   "version": "0.0.1",
-  "description": "Default Gatsby theme",
+  "description": "Pug theme",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -26,41 +26,23 @@
     "type-check": "tsc --noEmit",
     "build": "npm run lint:fix && rimraf ./src && tsc"
   },
-  "dependencies": {
-    "@material-ui/core": "^4.3.1",
-    "clsx": "^1.0.4",
-    "deepmerge": "^4.0.0",
-    "formik": "^1.5.8",
-    "gatsby-plugin-material-ui": "^2.1.4",
-    "gatsby-plugin-netlify-cms": "^4.1.6",
-    "gatsby-plugin-react-helmet": "^3.1.0",
-    "gatsby-plugin-typescript": "^2.1.0",
-    "notistack": "^0.8.9",
-    "react-helmet": "^5.2.1",
-    "yup": "^0.27.0"
-  },
+  "dependencies": {},
   "peerDependencies": {
     "@tidyiq/components": "*",
+    "@tidyiq/gatsby-theme-tidyiq": "*",
     "gatsby": "^2.13.11",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-redux": "^7.1.0",
-    "redux-starter-kit": "^0.6.1",
-    "typescript": "^3.5.3"
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
     "@tidyiq/components": "*",
     "@tidyiq/eslint-config": "^2.0.4",
-    "@types/react-helmet": "^5.0.8",
-    "@types/react-redux": "^7.1.1",
-    "@types/yup": "^0.26.22",
+    "@tidyiq/gatsby-theme-tidyiq": "*",
     "eslint": "^6.0.1",
     "gatsby": "^2.13.11",
     "prettier": "^1.18.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-redux": "^7.1.0",
-    "redux-starter-kit": "^0.6.1",
     "rimraf": "^2.6.3",
     "typescript": "^3.5.3"
   }

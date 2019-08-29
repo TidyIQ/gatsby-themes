@@ -1,21 +1,21 @@
 {
-  "name": "@tidyiq/gatsby-theme-tidyiq",
+  "name": "@tidyiq/core",
   "version": "0.0.1",
-  "description": "Default Gatsby theme",
+  "description": "Core components for TidyIQ templated websites",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/TidyIQ/gatsby-themes.git"
+    "url": "git+ssh://git@github.com/TidyIQ/core.git"
   },
   "keywords": [
-    "gatsby"
+    "tidyiq"
   ],
   "author": "Jake Clayton",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TidyIQ/gatsby-themes/issues"
+    "url": "https://github.com/TidyIQ/core/issues"
   },
-  "homepage": "https://github.com/TidyIQ/gatsby-themes/src/packages/gatsby-theme-tidyiq#readme",
+  "homepage": "https://github.com/TidyIQ/core#readme",
   "eslintConfig": {
     "extends": "@tidyiq"
   },
@@ -24,38 +24,35 @@
     "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
     "lint:fix": "npm run lint --fix",
     "type-check": "tsc --noEmit",
-    "build": "npm run lint:fix && rimraf ./src && tsc"
+    "build": "npm run lint:fix && rimraf ./dist && tsc"
   },
   "dependencies": {
-    "@material-ui/core": "^4.3.1",
     "clsx": "^1.0.4",
     "deepmerge": "^4.0.0",
     "formik": "^1.5.8",
-    "gatsby-plugin-material-ui": "^2.1.4",
-    "gatsby-plugin-netlify-cms": "^4.1.6",
-    "gatsby-plugin-react-helmet": "^3.1.0",
-    "gatsby-plugin-typescript": "^2.1.0",
     "notistack": "^0.8.9",
     "react-helmet": "^5.2.1",
     "yup": "^0.27.0"
   },
   "peerDependencies": {
-    "@tidyiq/components": "*",
-    "gatsby": "^2.13.11",
+    "@material-ui/core": "^4.2.0",
+    "@material-ui/icons": "^4.2.1",
+    "@material-ui/styles": "^4.2.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-redux": "^7.1.0",
-    "redux-starter-kit": "^0.6.1",
+    "redux-starter-kit": "^0.5.1",
     "typescript": "^3.5.3"
   },
   "devDependencies": {
-    "@tidyiq/components": "*",
+    "@material-ui/core": "^4.2.0",
+    "@material-ui/icons": "^4.2.1",
+    "@material-ui/styles": "^4.2.0",
     "@tidyiq/eslint-config": "^2.0.4",
     "@types/react-helmet": "^5.0.8",
     "@types/react-redux": "^7.1.1",
     "@types/yup": "^0.26.22",
     "eslint": "^6.0.1",
-    "gatsby": "^2.13.11",
     "prettier": "^1.18.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
