@@ -1,18 +1,18 @@
 {
-  "name": "gatsby-themes",
+  "name": "website-templates",
   "version": "0.0.1",
-  "description": "Gatsby theme packages",
+  "description": "Website templates",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/TidyIQ/gatsby-themes.git"
+    "url": "git+ssh://git@github.com/TidyIQ/website-templates.git"
   },
   "author": "Jake Clayton",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TidyIQ/gatsby-themes/issues"
+    "url": "https://github.com/TidyIQ/website-templates/issues"
   },
-  "homepage": "https://github.com/TidyIQ/gatsby-themes#readme",
+  "homepage": "https://github.com/TidyIQ/website-templates#readme",
   "workspaces": [
     "sites/*",
     "packages/*"
@@ -41,12 +41,12 @@
     "format": "prettier --ignore-path .gitignore --write **/*.{js,jsx,ts,tsx}",
     "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
     "lint:fix": "npm run lint --fix",
-    "type-check": "tsc --noEmit",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "type-check": "tsc --noEmit"
   },
   "devDependencies": {
-    "@tidyiq/eslint-config": "^2.0.2",
-    "eslint": "^6.0.1",
-    "prettier": "^1.18.2"
+    "@tidyiq/eslint-config": "^2.3.1",
+    "eslint": "^6.5.1",
+    "prettier": "^1.18.2",
+    "typescript": "^3.6.3"
   }
 }

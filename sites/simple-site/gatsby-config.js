@@ -7,6 +7,6 @@
 module.exports = {
   plugins: ["@tidyiq/gatsby-theme-tidyiq"],
   siteMetadata: {
-    title: "Tidy-IQ"
+    title: "Gold Coast Maids"
   }
 };

@@ -1,11 +1,11 @@
 {
-  "name": "@tidyiq/core",
+  "name": "@tidyiq/components",
   "version": "0.0.1",
   "description": "Core components for TidyIQ templated websites",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/TidyIQ/core.git"
+    "url": "git+ssh://git@github.com/TidyIQ/components.git"
   },
   "keywords": [
     "tidyiq"
@@ -13,9 +13,9 @@
   "author": "Jake Clayton",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TidyIQ/core/issues"
+    "url": "https://github.com/TidyIQ/components/issues"
   },
-  "homepage": "https://github.com/TidyIQ/core#readme",
+  "homepage": "https://github.com/TidyIQ/components#readme",
   "eslintConfig": {
     "extends": "@tidyiq"
   },
@@ -27,38 +27,31 @@
     "build": "npm run lint:fix && rimraf ./dist && tsc"
   },
   "dependencies": {
+    "@material-ui/core": "^4.5.0",
+    "@material-ui/icons": "^4.4.3",
     "clsx": "^1.0.4",
     "deepmerge": "^4.0.0",
     "formik": "^1.5.8",
-    "notistack": "^0.8.9",
+    "notistack": "^0.9.2",
     "react-helmet": "^5.2.1",
+    "react-redux": "^7.1.1",
+    "redux-starter-kit": "^0.7.0",
     "yup": "^0.27.0"
   },
   "peerDependencies": {
-    "@material-ui/core": "^4.2.0",
-    "@material-ui/icons": "^4.2.1",
-    "@material-ui/styles": "^4.2.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-redux": "^7.1.0",
-    "redux-starter-kit": "^0.5.1",
-    "typescript": "^3.5.3"
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1"
   },
   "devDependencies": {
-    "@material-ui/core": "^4.2.0",
-    "@material-ui/icons": "^4.2.1",
-    "@material-ui/styles": "^4.2.0",
-    "@tidyiq/eslint-config": "^2.0.4",
-    "@types/react-helmet": "^5.0.8",
-    "@types/react-redux": "^7.1.1",
-    "@types/yup": "^0.26.22",
-    "eslint": "^6.0.1",
+    "@tidyiq/eslint-config": "2.3.1",
+    "@types/react-helmet": "^5.0.11",
+    "@types/react-redux": "^7.1.4",
+    "@types/yup": "^0.26.24",
+    "eslint": "^6.5.1",
     "prettier": "^1.18.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-redux": "^7.1.0",
-    "redux-starter-kit": "^0.6.1",
-    "rimraf": "^2.6.3",
-    "typescript": "^3.5.3"
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1",
+    "rimraf": "^3.0.0",
+    "typescript": "^3.6.3"
   }
 }
