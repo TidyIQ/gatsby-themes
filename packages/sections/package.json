@@ -1,0 +1,48 @@
+{
+  "name": "@tidyiq/sections",
+  "version": "0.0.1",
+  "description": "Page sections for TidyIQ templated websites",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/TidyIQ/sections.git"
+  },
+  "keywords": [
+    "tidyiq"
+  ],
+  "author": "Jake Clayton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TidyIQ/sections/issues"
+  },
+  "homepage": "https://github.com/TidyIQ/sections#readme",
+  "eslintConfig": {
+    "extends": "@tidyiq"
+  },
+  "scripts": {
+    "format": "prettier --ignore-path .gitignore --write build/**/*.{js,jsx,ts,tsx}",
+    "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
+    "lint:fix": "npm run lint --fix",
+    "type-check": "tsc --noEmit",
+    "build": "npm run lint:fix && rimraf ./dist && tsc"
+  },
+  "dependencies": {
+    "@material-ui/icons": "^4.4.3",
+    "@tidyiq/components": "*",
+    "react-helmet": "^5.2.1",
+    "yup": "^0.27.0"
+  },
+  "peerDependencies": {
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1"
+  },
+  "devDependencies": {
+    "@tidyiq/eslint-config": "2.3.1",
+    "eslint": "^6.5.1",
+    "prettier": "^1.18.2",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1",
+    "rimraf": "^3.0.0",
+    "typescript": "^3.6.3"
+  }
+}

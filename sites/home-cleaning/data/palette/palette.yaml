@@ -1,0 +1,14 @@
+primary: "#00bcd4"
+secondary: "#e65100"
+advanced:
+  primaryVariants:
+    contrastText: ""
+    dark: ""
+    light: ""
+  secondaryVariants:
+    contrastText: ""
+    dark: ""
+    light: ""
+  tonalOffset:
+    light: ""
+    dark: ""

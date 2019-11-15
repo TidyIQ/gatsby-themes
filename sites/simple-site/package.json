@@ -30,7 +30,6 @@
     "@material-ui/core": "^4.5.0",
     "@material-ui/icons": "^4.4.3",
     "@tidyiq/components": "*",
-    "@tidyiq/gatsby-theme-tidyiq": "*",
     "gatsby": "^2.15.28",
     "react": "^16.10.1",
     "react-dom": "^16.10.1"

@@ -1,0 +1,28 @@
+h1:
+  color: primaryDark
+  fontFamily: Montserrat
+h2:
+  color: primaryDark
+  fontFamily: Montserrat
+h3:
+  color: primaryDark
+  fontFamily: Montserrat
+h4:
+  color: primaryDark
+  fontFamily: Montserrat
+h5:
+  fontFamily: Montserrat
+h6:
+  fontFamily: Open Sans
+subtitle1:
+  fontFamily: Open Sans
+subtitle2:
+  fontFamily: Open Sans
+body1:
+  fontFamily: Open Sans
+body2:
+  fontFamily: Open Sans
+caption:
+  fontFamily: Open Sans
+button:
+  fontFamily: Quicksand

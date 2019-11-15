@@ -1,0 +1,24 @@
+pageLayoutProps:
+  description: test
+  title: Home
+fold:
+  bgImage: /img/homepage-hero-woman-relaxing-1920.jpg
+  highlightedReviewProps:
+    author: Diane C
+    avatar: /img/jake-c.jpg
+    location: Surfers Paradise
+    review: >-
+      Absolutely above and beyond my expectations! The best house cleaning
+      service I have ever hired. Thank you!!!!
+  preBookingFormProps:
+    ctaLabel: Get an instant quote
+  subtitle: You click. We clean. It's that simple.
+  title: That Clean Home Feeling!
+intro:
+  description: |-
+    Test content.
+
+    **This is bolded.**
+
+    ## This is H2 text
+  title: Gold Coast's Best Cleaners

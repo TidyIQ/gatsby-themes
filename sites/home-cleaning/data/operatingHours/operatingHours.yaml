@@ -1,0 +1,18 @@
+cleaningHoursArray:
+  - day: Monday to Friday
+    hours: "7:00 AM to 6:00 PM"
+  - day: Saturday
+    hours: "8:00 AM to 1:00 PM"
+  - day: Sunday
+    hours: CLOSED
+  - day: Public Holidays
+    hours: CLOSED
+officeHoursArray:
+  - day: Monday to Friday
+    hours: "9:00 AM to 5:00 PM"
+  - day: Saturday
+    hours: CLOSED
+  - day: Sunday
+    hours: CLOSED
+  - day: Public Holidays
+    hours: CLOSED

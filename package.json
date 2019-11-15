@@ -15,7 +15,8 @@
   "homepage": "https://github.com/TidyIQ/website-templates#readme",
   "workspaces": [
     "sites/*",
-    "packages/*"
+    "packages/*",
+    "themes/*"
   ],
   "eslintConfig": {
     "extends": "@tidyiq"

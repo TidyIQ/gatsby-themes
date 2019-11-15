@@ -1,0 +1,23 @@
+socialArray:
+  - platform: Facebook
+  - platform: Twitter
+contactArray:
+  - href: /
+    label: (07) 5646 5290
+    type: phone
+  - href: /
+    label: 0488 123 456
+    type: sms
+  - href: /
+    label: support@goldcoastmaids.com.au
+    type: email
+  - href: /
+    label: 'ABN: 12 345 678'
+    type: tax
+otherLinksArray:
+  - href: /
+    label: Terms & Conditions
+  - href: /
+    label: Privacy Policy
+  - href: /
+    label: Sitemap

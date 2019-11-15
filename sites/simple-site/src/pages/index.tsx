@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import { PageRendererProps } from "gatsby";
 import StickyBar from "@tidyiq/components/dist/StickyBar";
 import Footer from "@tidyiq/components/dist/Footer";
+import { Card, CardContent, Hidden } from "@material-ui/core";
 import CommonQuestions from "@tidyiq/components/dist/CommonQuestions";
 import Features from "@tidyiq/components/dist/Features";
 import CTADivider from "@tidyiq/components/dist/CTADivider";
@@ -13,9 +14,9 @@ import Tally from "@tidyiq/components/dist/Tally";
 import Reviews from "@tidyiq/components/dist/Reviews";
 import Fold from "@tidyiq/components/dist/Fold";
 import PreBookingForm from "@tidyiq/components/dist/PreBookingForm";
-import Hidden from "@material-ui/core/Hidden";
 import Container from "@tidyiq/components/dist/Container";
 import Typography from "@material-ui/core/Typography";
+import HighlightedReview from "@tidyiq/components/dist/Fold/HighlightedReview";
 import Logo from "../components/Logo";
 import Head from "../components/Head";
 import navArray from "../data/navArray";
@@ -41,20 +42,29 @@ const Homepage: FC<PageRendererProps> = ({ location: { pathname } }) => {
       <Fold Logo={Logo} navArray={navArray} pathname={pathname} />
 
       <Hidden mdUp>
-        <Container style={{ paddingTop: 32, paddingBottom: 24 }}>
+        <Container style={{ paddingTop: 32, paddingBottom: 32 }}>
           <Typography
             align="center"
             component="p"
             variant="h4"
-            style={{ paddingBottom: 16 }}
+            style={{ paddingBottom: 24 }}
           >
             You click. We clean. It&apos;s that simple.
           </Typography>
-          <PreBookingForm />
+          <Card raised>
+            <CardContent>
+              <PreBookingForm />
+            </CardContent>
+          </Card>
+          <Hidden smUp>
+            <HighlightedReview />
+          </Hidden>
         </Container>
       </Hidden>
 
-      <Features featuresArray={featuresArray} />
+      <Hidden xsDown>
+        <Features featuresArray={featuresArray} />
+      </Hidden>
 
       <Intro Logo={Logo} />
 
@@ -73,7 +83,9 @@ const Homepage: FC<PageRendererProps> = ({ location: { pathname } }) => {
 
       <Reviews reviewsArray={reviewsArray} />
 
-      <Tally tallyArray={tallyArray} />
+      <Hidden xsDown>
+        <Tally tallyArray={tallyArray} />
+      </Hidden>
 
       <CommonQuestions faqArray={commonQuestionsArray} />
 
@@ -83,6 +95,7 @@ const Homepage: FC<PageRendererProps> = ({ location: { pathname } }) => {
         Logo={Logo}
         officeHoursArray={officeHoursArray}
         otherLinksArray={legalLinksArray}
+        socialArray={socialArray}
       />
     </>
   );

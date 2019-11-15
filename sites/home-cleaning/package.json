@@ -1,0 +1,40 @@
+{
+  "name": "home-cleaning",
+  "version": "0.0.1",
+  "description": "Testing page for gatsby-theme-homecleaning theme",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/TidyIQ/home-cleaning-theme.git"
+  },
+  "author": "Jake Clayton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TidyIQ/home-cleaning-theme/issues"
+  },
+  "homepage": "https://github.com/TidyIQ/home-cleaning-theme#readme",
+  "eslintConfig": {
+    "extends": "@tidyiq"
+  },
+  "scripts": {
+    "format": "prettier --ignore-path .gitignore --write **/*.{js,jsx,ts,tsx}",
+    "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
+    "lint:fix": "npm run lint --fix",
+    "type-check": "tsc",
+    "dev": "gatsby develop",
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "serve": "gatsby serve"
+  },
+  "dependencies": {
+    "gatsby": "^2.15.28",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1"
+  },
+  "devDependencies": {
+    "@tidyiq/eslint-config": "^2.3.1",
+    "eslint": "^6.5.1",
+    "prettier": "^1.18.2",
+    "typescript": "^3.6.3"
+  }
+}

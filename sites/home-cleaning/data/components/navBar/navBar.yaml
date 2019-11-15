@@ -1,0 +1,13 @@
+navArray:
+  - label: Services
+    page: services
+  - label: Pricing
+    page: pricing
+  - label: Reviews
+    page: reviews
+  - label: FAQs
+    page: faq
+  - label: About
+    page: about
+  - label: Contact
+    page: contact
